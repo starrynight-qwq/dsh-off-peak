@@ -1,0 +1,22 @@
+# 本机运行产物与调试用的大件，都不进仓库。
+
+# 为离线调试而解包的 DSH / asar（约 108 MB，属于上游代码，不要提交）
+_dsh_src/
+_asar/
+
+# 自测与验证用的一次性 profile / 目录（含本机路径与运行时数据）
+_verify/
+_verify_home/
+_harness_home/
+_enforcement_home/
+_acl-recovery/
+_rename-backup/
+
+# 开发笔记：b13-design.md 是整段会话记录转储，含本机用户名与绝对路径
+_notes/
+
+# 依赖与编辑器噪音
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

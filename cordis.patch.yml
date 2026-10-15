@@ -1,0 +1,8 @@
+# dsh-off-peak bundle patch — inserts this plugin into a profile's layer stack.
+#
+# The entry id below is the settings namespace: the 错峰模式 settings page writes
+# the `enabled` toggle through `settings.mutate('offPeak', …)`, so the id and
+# the client half's NAMESPACE constant must stay equal.
+- insert:
+    - id: offPeak
+      name: 'dsh-off-peak'
